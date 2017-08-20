@@ -11,7 +11,8 @@
     "autoload":{
         "psr-4":{
             "Engine\\": "engine",
-            "Engine\\DI\\": "engine/DI"
+            "Engine\\DI\\": "engine/DI",
+            "Tests\\": "tests/"
         }
     }
 }

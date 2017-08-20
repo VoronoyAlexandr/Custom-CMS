@@ -2,5 +2,4 @@
 
 Just for study patterns
 
-Used patterns: 
-DI
+Used: DI, AbstractProvider, Services

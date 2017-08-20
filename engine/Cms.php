@@ -8,7 +8,7 @@ namespace Engine;
 
 use Engine\DI\DI;
 
-class CMS
+class Cms
 {
     /**
      * @var
@@ -25,10 +25,12 @@ class CMS
     }
 
     /**
-     * Run CMS
+     *
+     * @return string
      */
     public function run(){
-    $db = $this->di->get('test');
+
+        return 'Hello';
 
     }
 
