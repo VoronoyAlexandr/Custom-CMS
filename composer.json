@@ -1,0 +1,17 @@
+{
+    "name": "panda/framework",
+    "description": "Just for fun",
+    "authors": [
+        {
+            "name": "Alexandr Voronoy",
+            "email": "servermed@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Engine\\": "engine",
+            "Engine\\DI\\": "engine/DI"
+        }
+    }
+}
