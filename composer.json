@@ -8,9 +8,7 @@
     }
   ],
   "require": {},
-  "require-dev": {
-    "phpunit/phpunit": "*"
-  },
+  "require-dev": {},
   "autoload": {
     "psr-4": {
       "Engine\\": "engine",
