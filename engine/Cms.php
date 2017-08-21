@@ -11,9 +11,10 @@ use Engine\DI\DI;
 class Cms
 {
     /**
-     * @var
+     * @var DI\
      */
     private $di;
+    public $router;
 
     /**
      * CMS constructor.
@@ -22,6 +23,7 @@ class Cms
     public function __construct(DI $di)
     {
         $this->di = $di;
+        $this->router = $this->di->get('router');
     }
 
     /**
@@ -30,7 +32,13 @@ class Cms
      */
     public function run(){
 
+
+     //  print_r($this->di);
+        $this->router->add('home','/','HomeController::index');
+        $this->router->add('product','/product/{id}','ProductController::index');
+        print_r($this->di);
         return 'Hello';
+
 
     }
 
