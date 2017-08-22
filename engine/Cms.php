@@ -8,6 +8,7 @@ namespace Engine;
 
 use Engine\Core\Router\Router;
 use Engine\DI\DI;
+use Engine\Helper\Common;
 
 class Cms
 {
@@ -34,12 +35,13 @@ class Cms
      *
      * @return string
      */
-    public function run(){
+    public function run()
+    {
+        //  print_r($this->di);
+        $this->router->add('home','/','HomeController::index');
+        $this->router->add('product','/user/12','ProductController::index');
 
-
-     //  print_r($this->di);
-//        $this->router->add('home','/','HomeController::index');
-//        $this->router->add('product','/product/{id}','ProductController::index');
+        $routerDispatch = $this->router->dispatch(Common::getMethod(), Common::getPathUrl());
 
         return 'Hello';
 
