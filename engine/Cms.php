@@ -6,6 +6,7 @@
 
 namespace Engine;
 
+use Engine\Core\Router\Router;
 use Engine\DI\DI;
 
 class Cms
@@ -14,6 +15,9 @@ class Cms
      * @var DI\
      */
     private $di;
+    /**
+     * @var Router
+     */
     public $router;
 
     /**
@@ -34,9 +38,9 @@ class Cms
 
 
      //  print_r($this->di);
-        $this->router->add('home','/','HomeController::index');
-        $this->router->add('product','/product/{id}','ProductController::index');
-        print_r($this->di);
+//        $this->router->add('home','/','HomeController::index');
+//        $this->router->add('product','/product/{id}','ProductController::index');
+
         return 'Hello';
 
 
